@@ -1,0 +1,46 @@
+@import "@/styles";
+
+.popup {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(188, 195, 208, 0.50);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  transition: opacity .3s;
+  font-family: "ProximaNova", sans-serif;
+}
+
+.content {
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  inset: 0;
+  margin: auto;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.875rem;
+  }
+
+  .cross {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.active {
+  transition: opacity .3s;
+  opacity: 1;
+  pointer-events: all;
+}

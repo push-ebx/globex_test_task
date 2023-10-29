@@ -1,0 +1,57 @@
+.fullCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 28.25rem;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+
+  .rows {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  span {
+    color: var(--asphalt-color);
+    font-family: Proxima Nova sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+
+  .rowNames, .rowValues {
+    display: flex;
+    flex-direction: column;
+    row-gap: .88rem;
+    max-width: 17rem;
+
+    span {
+      font-family: Proxima Nova sans-serif;
+      font-size: 1rem;
+    }
+  }
+
+  .rowNames {
+    & > span {
+      font-size: 1.25rem;
+      color: var(--plumbum-color);
+    }
+  }
+
+  .extraInfo {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+
+    span:first-child {
+      font-size: 1.125rem;
+      color: var(--plumbum-color);
+    }
+
+    span:last-child {
+      font-size: 1rem;
+      line-height: 1.125rem;
+    }
+  }
+}

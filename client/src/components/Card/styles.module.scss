@@ -1,0 +1,32 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 19.625rem;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  border-radius: 1rem;
+  background: #FFFFFF;
+
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.10);
+
+  h2 {
+    font-family: "ProximaNova", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    color: var(--plumbum-color);
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    column-gap: 0.88rem;
+    color: var(--asphalt-color);
+    font-family: Proxima Nova sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+}
