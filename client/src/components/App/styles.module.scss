@@ -1,13 +1,27 @@
+@import "@/styles";
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   gap: 1.5rem 1.56rem;
   margin-bottom: 3.75rem;
+
+  @include for-desktop-down() {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-tablet-down() {
+    grid-template-columns: 1fr;
+  }
 }
 
 .app {
   padding: 4rem 5rem;
+
+  @include for-tablet-down() {
+    padding: 4rem 2rem;
+  }
 }
 
 .input {

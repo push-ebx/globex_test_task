@@ -10,4 +10,9 @@ input {
   font-family: "ProximaNova", sans-serif;
   font-weight: 400;
   background: url('@/assets/icons/search.svg') no-repeat scroll calc(100% - 1.5rem) 50%;
+  transition: box-shadow .2s;
+
+  &:focus {
+    box-shadow: 0 0 20px 0 rgba(212, 222, 254, 0.5);
+  }
 }
